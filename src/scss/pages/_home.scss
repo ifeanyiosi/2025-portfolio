@@ -64,7 +64,8 @@
       @include media("<=phone") {
         max-width: 175px;
         width: 100%;
-        margin-left: auto;
+        padding-left: 4px;
+        
 
         br {
           display: none;
@@ -196,7 +197,7 @@
 
           @include media("<=phone") {
             max-width: 255px;
-            margin-left: auto;
+           
           }
         }
       }
@@ -307,7 +308,7 @@
 
   &__stack {
     max-width: 104.4rem;
-    margin-left: auto;
+    
     padding-top: 16rem;
     padding-bottom: 24rem;
     @extend %description-16;
@@ -327,7 +328,7 @@
 
       @include media("<=phone") {
         max-width: 35rem;
-        margin-left: auto;
+        
         padding-left: 1.6rem;
         padding-right: 1.6rem;
       }
@@ -583,11 +584,12 @@
       text-align: center;
 
       @include media("<=phone") {
-        max-width: 255px;
+        
         width: 100%;
         text-align: left;
-        margin-left: auto;
-        word-break: break-word;
+        padding-left: 8px;
+        word-break: keep-all;
+        font-size: 10px;
       }
 
       .to-copy {
@@ -621,6 +623,7 @@
 
         @include media("<=tablet") {
           text-align: left;
+          font-size: 28px;
         }
 
         @media (any-pointer: fine) {
@@ -651,7 +654,7 @@
     }
 
     @include media("<=tablet") {
-      margin-left: auto;
+      padding-left: 8px;
       max-width: 40rem;
       width: 100%;
     }
